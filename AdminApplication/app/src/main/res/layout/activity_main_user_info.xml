@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainUserInfoActivity"
+    android:background="@drawable/mobilebackground1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/txtProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding = "16dp" >
+
+                        <ImageView
+                            android:id="@+id/imageUser"
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/noimage"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name "
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textColor="#ffffff"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Ms Raihana"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtHpno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No."
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:id="@+id/editHpno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="006012536448"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtUserID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student ID"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:id="@+id/editUserID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="kowsar12345"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="64jln Hilton Pj"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtFaculty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:id="@+id/editFaculty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Single Female Bitse 3rd year"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="64jln Hilton Pj"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email "
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Email:Raihana007@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnApproved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Approved"
+                    android:textSize="20dp"
+                    android:onClick="onApproved"/>
+
+
+                <Button
+                    android:id="@+id/btnReject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Reject"
+                    android:textSize="20dp"
+                    android:onClick="onReject"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

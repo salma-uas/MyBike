@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageUser"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/mobilebackground1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/backgroundapp116" />
+    <Button
+        android:id="@+id/btnDriver"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Driver"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="#ffff"/>
+    <Button
+        android:id="@+id/btnPassenger"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/Passenger"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="#ffff"/>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageRouteActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/mobilebackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/backgroundapp11"
+        android:scaleType="fitXY" />
+
+
+
+    <Button
+        android:id="@+id/btnAddRoute"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Add Route"
+        android:textAllCaps="false"
+        android:background="#ffff"/>
+
+    <Button
+        android:id="@+id/btnViewRoute"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="View Route"
+        android:textAllCaps="false"
+        android:background="#ffff"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/mobilebackground6">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/backgroundapp2"
+        android:scaleType="fitXY" />
+
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_marginTop="190dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop ="19dp"
+        android:gravity="center"
+        android:hint="@string/Password"
+        android:background="#fff"
+        android:inputType="textPassword"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Login"
+        android:background="#fff"
+        android:textAllCaps="false" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRouteActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/mobilebackground"
+    >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Point"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="18dp"/>
+
+
+        <EditText
+            android:id="@+id/editPickupPoint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Pickup Point Goes Here"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="18dp"/>
+
+
+        <EditText
+            android:id="@+id/editDestinationPoint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Destination Name"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination Coordinate"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="18dp"/>
+
+
+        <EditText
+            android:id="@+id/editDestinationCoordinate"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="start"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Coordinate"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="18dp"/>
+
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Price"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRoute"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Add Route"
+        android:textAllCaps="false"
+        android:background="#ffff"
+        android:onClick="onAddRoute"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

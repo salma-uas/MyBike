@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateReport"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#E1F2D1">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/toolbar"
+
+        >
+
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="30dp"
+        android:layout_below="@+id/toolbar"
+
+        >
+
+
+        <TextView
+            android:id="@+id/txtBookingID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Completed Booking"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/txtCompletedBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtBookingID"
+            android:text="Completed Goes here" />
+
+        <TextView
+            android:id="@+id/txtBookingID2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cancelled Booking"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtBookingID"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txtCancelBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Goes here"
+            android:layout_toRightOf="@+id/txtBookingID"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtBookingID"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/txtPickupPoint"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:layout_below="@+id/txtBookingID2"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profit Goes here"
+            android:layout_toRightOf="@+id/txtPickupPoint"
+            android:layout_below="@+id/txtBookingID2"
+            android:layout_alignLeft="@+id/txtCompletedBooking"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total Bookings"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtAmount"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+
+
+
+
+        <com.github.mikephil.charting.charts.PieChart
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_margin="20dp"
+                android:id="@+id/pieChart"
+                android:layout_below="@+id/txtTitle"
+                />
+
+
+        <TextView
+            android:id="@+id/txtTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total Completed Bookings"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pieChart"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+
+        <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_margin="10dp"
+                android:id="@+id/barChart"
+                android:layout_below="@+id/txtTitle2"
+                />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

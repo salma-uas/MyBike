@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AdminApplication</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Second">ManageProfile</string>
+    <string name="ManageProfile">ManageProfile</string>
+    <string name="ManageUser">ManageUser</string>
+    <string name="ViewReport">ViewReport</string>
+    <string name="ManageReport">ManageReport</string>
+    <string name="Rider">Rider</string>
+    <string name="Passenger">Passenger</string>
+</resources>

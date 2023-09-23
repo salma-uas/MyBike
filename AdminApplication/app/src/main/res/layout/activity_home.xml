@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/mobilebackground1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/backgroundapp115" />
+
+    <Button
+        android:id="@+id/btnManageRoute"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#ffff"
+        android:gravity="center"
+        android:text="Manage Route"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnManageUser"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Manage User"
+        android:textAllCaps="false"
+        android:background="#ffff"/>
+
+        <Button
+            android:id="@+id/btnGenerateReport"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Generate Report"
+            android:textAllCaps="false"
+            android:background="#ffff"/>
+
+
+
+    <Button
+    android:id="@+id/btnViewFeedback"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="View Feedback"
+        android:textAllCaps="false"
+        android:background="#ffff"/>
+
+    <Button
+        android:id="@+id/btnManageProfile"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:text="Manage Profile"
+        android:background="#ffff"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:text="Log Out"
+
+        android:background="#ffff"/>
+
+
+
+</LinearLayout>
