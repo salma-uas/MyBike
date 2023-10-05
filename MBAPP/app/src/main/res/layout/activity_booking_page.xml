@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BookingPage"
+    android:background="@drawable/mobilebackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="396dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgroundapp5" />
+    <TextView
+        android:id="@+id/Select_Location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Select Trip"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/tripSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        >
+
+    </Spinner>
+
+
+  <LinearLayout
+      android:layout_width="190dp"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:layout_marginTop="10dp">
+<TextView
+    android:id="@+id/price"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Rm##.## "
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:textSize="20dp"/>
+
+
+
+
+
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cancel Booking within 3 minute of book"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Kindly prepare your change"
+
+
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="0dp"
+        >
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Confirm"
+            android:onClick="onConfirmBooking"
+            />
+
+
+    </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

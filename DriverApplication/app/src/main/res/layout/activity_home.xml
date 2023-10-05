@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+
+    android:background="@drawable/mobilebackground4">
+
+    >
+
+
+    <!-- android:background="#EFF1D3" -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/backgroundapp11"
+        android:scaleType="fitXY" />
+
+
+    <Button
+        android:id="@+id/btnManageBooking"
+        android:layout_width="190dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:text="Manage Booking"
+        android:textAllCaps="false" />
+
+    <Button
+    android:id="@+id/btnBookingHistory"
+    android:layout_width="190dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="20dp"
+    android:text="Booking History"
+    android:background="#fff"
+    android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnGenerateReport"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Generate Report"
+        android:background="#fff"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnManageProfile"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Manage Profile"
+        android:background="#fff"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Logout"
+        android:background="#fff"
+        android:textAllCaps="false" />
+
+
+
+</LinearLayout>

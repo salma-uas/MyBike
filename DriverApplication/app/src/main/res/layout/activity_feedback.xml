@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FeedbackActivity"
+    android:background="#EFF1D3">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/toolbar"
+        android:text="Rating Given"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="2"
+        android:theme="@color/duskYellow"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtRating"
+
+
+        />
+
+    <EditText
+        android:id="@+id/editFeedback"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="25dp"
+        android:focusable="false"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/ratingbar"
+        android:text="No feedback given"
+
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
+

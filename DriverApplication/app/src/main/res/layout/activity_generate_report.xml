@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateReport"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#EFF1D3">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_below="@+id/toolbar"
+
+        >
+
+
+        <TextView
+            android:id="@+id/txtBookingID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Completed Booking"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/txtCompletedBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Goes here"
+            android:layout_toRightOf="@+id/txtBookingID"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/txtPickupPoint"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Total Profit"
+            android:layout_below="@+id/txtBookingID"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/txtProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profit Goes here"
+            android:layout_toRightOf="@+id/txtPickupPoint"
+            android:layout_below="@+id/txtBookingID"
+            android:layout_alignLeft="@+id/txtCompletedBooking"
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/barchart"
+        android:layout_below="@+id/info"
+        />
+
+
+</RelativeLayout>

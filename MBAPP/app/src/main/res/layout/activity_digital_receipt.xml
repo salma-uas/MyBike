@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DigitalReceipt"
+    android:background="@drawable/mobilebackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+    <TextView
+    android:id="@+id/txtBookingID"
+
+    android:layout_width="350dp"
+    android:layout_height="80dp"
+    android:layout_marginLeft="0dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+        android:padding="10dp"
+
+    android:layout_marginTop="2dp"
+    android:text="Booking ID: #"
+    android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtPickupPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text=" #IUKL Block A"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow1" />
+    <TextView
+        android:id="@+id/txtDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text=" #Serdang Ktm Gate A."
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+    <TextView
+        android:id="@+id/your_fare"
+        android:layout_marginRight="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Trip Fare"
+        android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/your_fare_cost"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_toRightOf="@+id/your_fare"
+            android:text="#"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+        <TextView
+        android:id="@+id/Paid_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Paid By"
+        android:textSize="20dp"
+        android:layout_below="@+id/your_fare"
+
+        />
+
+        <TextView
+            android:id="@+id/paid_by_cost"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+
+            android:layout_toRightOf="@+id/Paid_by"
+            android:layout_below="@+id/your_fare_cost"
+            android:text="#"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Date and Time:"
+            android:textSize="20dp"
+            android:layout_below="@+id/paid_by_cost"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/time"
+            android:layout_below="@+id/paid_by_cost"
+            android:text="#"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Status"
+            android:textSize="20dp"
+            android:layout_below="@+id/time"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/status"
+            android:layout_below="@+id/txtTime"
+            android:text="#"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/txtDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Driver Name"
+            android:textSize="20dp"
+            android:layout_below="@+id/txtStatus"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtDriverName"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txtDriver"
+            android:layout_below="@+id/txtStatus"
+            android:text="#"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/txtBike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Bike Model"
+            android:textSize="20dp"
+            android:layout_below="@+id/txtDriverName"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtBikeModel"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txtBike"
+            android:layout_below="@+id/txtDriverName"
+            android:text="#"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_marginRight="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/time"
+        android:text="You rated this booking trip"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        />
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="2"
+                android:theme="@color/duskYellow" />
+
+
+            <Button
+                android:id="@+id/btnRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Feedback"
+                android:textSize="20dp"
+                android:onClick="onRating"/>
+
+
+            <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:text="Close"
+        android:textSize="20dp"        android:onClick="onClose"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

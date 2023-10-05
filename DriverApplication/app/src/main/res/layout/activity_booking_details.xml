@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingDetailsActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#EFF1D3"
+    >
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+
+        />
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="#EFF1D3"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/txtRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup to Destination"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#000"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="okok0"
+        android:background="#fff"
+        android:layout_below="@+id/webview"
+        android:padding="100dp"
+        android:textColor="#000"
+        />
+
+
+    <Button
+        android:id="@+id/my_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="onSlideViewButtonClick"
+        android:text="Show Booking Details"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/test"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_above="@+id/test"
+        android:layout_width="match_parent"
+        android:background="#EFF1D3"
+        android:layout_height="56dp">
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/my_view"
+        android:background="#a6e1aa"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_centerHorizontal="true"
+            android:onClick="onAccept"
+            android:text="Accept Booking"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:background="#4FA7D1"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btnCancelled"
+            android:layout_centerHorizontal="true"
+            android:onClick="onCancelled"
+            android:text="Cancel Booking"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:background="#BA3928"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnPayment"
+                android:onClick="onPayment"
+                android:text="Get Payment and Finish"
+                android:layout_margin="20dp"
+                android:background="#4FA7D1"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+
+            >
+
+
+            <TextView
+                android:id="@+id/txtBookingID"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Booking ID"
+
+                />
+
+            <TextView
+                android:id="@+id/txtBookingIDValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking ID Goes Here"
+                android:layout_toRightOf="@+id/txtBookingID"
+                />
+
+
+            <TextView
+                android:id="@+id/txtPickupPoint"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Pickup point"
+                android:layout_below="@+id/txtBookingID"
+
+                />
+
+            <TextView
+                android:id="@+id/txtPickupPointValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup point Goes Here"
+                android:layout_toRightOf="@+id/txtPickupPoint"
+                android:layout_below="@+id/txtBookingID"
+
+                />
+
+            <TextView
+                android:id="@+id/txtDestination"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:layout_below="@+id/txtPickupPoint"
+
+                />
+
+            <TextView
+                android:id="@+id/txtDestinationtValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination point Goes Here"
+                android:layout_toRightOf="@+id/txtDestination"
+                android:layout_below="@+id/txtPickupPoint"
+
+                />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_below="@+id/txtDestination"
+
+                />
+
+            <TextView
+                android:id="@+id/txtPriceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RM ###"
+                android:layout_toRightOf="@+id/txtPrice"
+                android:layout_below="@+id/txtDestination"
+
+                />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_below="@+id/txtPrice"
+
+                />
+
+            <TextView
+                android:id="@+id/txtStatusValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Goes Here"
+                android:layout_toRightOf="@+id/txtPrice"
+                android:layout_below="@+id/txtPrice"
+
+                />
+
+            <TextView
+                android:id="@+id/txtDateTime"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Date/Time"
+                android:layout_below="@+id/txtStatus"
+
+                />
+
+            <TextView
+                android:id="@+id/txtDateTimeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Time Goes Here"
+                android:layout_toRightOf="@+id/txtPrice"
+                android:layout_below="@+id/txtStatus"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Passenger Info"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/txtDateTime"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/txtPassengerName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_below="@+id/txtTitle"
+
+                />
+
+            <TextView
+                android:id="@+id/txtPassengerNameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fullname Goes Here"
+                android:layout_toRightOf="@+id/txtPassengerName"
+                android:layout_below="@+id/txtTitle"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txtStudentID"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Student ID"
+                android:layout_below="@+id/txtPassengerName"
+
+                />
+
+            <TextView
+                android:id="@+id/txtStudentIDValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student ID Goes Here"
+                android:layout_toRightOf="@+id/txtStudentID"
+                android:layout_below="@+id/txtPassengerName"
+
+                />
+
+            <TextView
+                android:id="@+id/txtFaculty"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Faculty"
+                android:layout_below="@+id/txtStudentID"
+
+                />
+
+            <TextView
+                android:id="@+id/txtFacultyValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty Goes Here"
+                android:layout_toRightOf="@+id/txtFaculty"
+                android:layout_below="@+id/txtStudentID"
+
+                />
+
+            <TextView
+                android:id="@+id/txtContactNo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Contact No"
+                android:layout_below="@+id/txtFacultyValue"
+
+                />
+
+            <TextView
+                android:id="@+id/txtContactNoValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No Goes Here"
+                android:layout_toRightOf="@+id/txtContactNo"
+                android:layout_below="@+id/txtFacultyValue"
+
+                />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_below="@+id/txtContactNo"
+
+                />
+
+            <TextView
+                android:id="@+id/txtEmailValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Goes Here"
+                android:layout_toRightOf="@+id/txtEmail"
+                android:layout_below="@+id/txtContactNo"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="2"
+            android:layout_gravity="center"
+            android:theme="@color/duskYellow"/>
+
+
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedbacks"
+            android:layout_gravity="center"
+            android:onClick="onFeedback"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

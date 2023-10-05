@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">DriverApplication</string>
+    <string name="Username">Username</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="FullName">FullName</string>
+    <string name="IcOrPassportNumber">IcOrPassportNumber</string>
+    <string name="IcOrPassportNo">IcOrPassportNo</string>
+    <string name="ProvidePlateNo">ProvidePlateNo</string>
+    <string name="MobileNumber">MobileNumber</string>
+    <string name="NotApprove">NotApprove</string>
+    <string name="Approve">Approve</string>
+    <string name="Profession">Profession</string>
+    <string name="Emailaddress">EmailAddress</string>
+    <string name="Readinstruction">ReadInstruction</string>
+    <string name="Gender">Gender</string>
+    <string name="Review">Review</string>
+    <string name="Submit">Submit</string>
+    <string name="PlateNumber">PlateNo</string>
+    <string name="Photo">Photo</string>
+    <string name="UploadPhoto">UploadPhoto</string>
+    <string name="BikeImage">BikeImage</string>
+    <string name="BikeModel">BikeModel</string>
+    <string name="UploadPicture">Upload picture</string>
+    <string name="UploadBikeImage">UploadBikeImage</string>
+    <string name="UploadLicense">UploadLicense</string>
+    <string name="UploadBioDataPage">UploadBioDataPage</string>
+    <string name="CancelBooking">CancelBooking</string>
+    <string name="AcceptBooking">AcceptBooking</string>
+    <string name="ConfirmPayment">ConfirmPayment</string>
+    <string name="ViewFeedBack">ViewFeedBack</string>
+    <string name="ManageProfile">ManageProfile</string>
+    <string name="GenerateReport">GenerateReport</string>
+    <string name="Password">Password</string>
+
+    <string name="Completed">Completed</string>
+    <string name="Pending">Pending</string>
+    <string name="Inprogress">Inprogress</string>
+    <string name="Accept">Accept</string>
+    <string name="Complete">Complete</string>
+    <string name="block11">Block11</string>
+    <string name="kowsar">Kowsar</string>
+    <string name="male">Male</string>
+    <string name="Male">male</string>
+    <string name="Block11">Block11</string>
+
+    <string name="select_profession">Select Profession</string>
+
+
+    <string-array name="profession">
+        <item>Student</item>
+        <item>Staff</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Drop_of_lrt_sungai_besi_gatea">Drop of Lrt Sungai Besi GateA</string>
+    <string name="title_activity_maps_pending">Map</string>
+</resources>

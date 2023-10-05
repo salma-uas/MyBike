@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+
+    android:background="@drawable/mobilebackground6">
+    >
+    <!-- android:background="#EFF1D3" -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/backgroundapp2" />
+
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_marginTop="190dp"
+        android:drawableLeft="@drawable/username"
+        android:inputType="textEmailAddress"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/password"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:hint="@string/Password"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Login"
+        android:background="#fff"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_Register"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Register"
+        android:background="#fff"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

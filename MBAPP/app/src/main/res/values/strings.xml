@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">MotorBikeApplication</string>
+    <string name="username">username</string>
+    <string name="password">Password</string>
+    <string name="Login">Login</string>
+    <string name="register">register</string>
+    <string name="EmailAddress">EmailAddress</string>
+    <string name="StudentId">StudentId</string>
+    <string name="Faculty">Faculty</string>
+    <string name="MobileNumber">MobileNumber</string>
+    <string name="Username">Username</string>
+    <string name="Register">Register</string>
+    <string name="Password">Password</string>
+    <string name="Booking">Booking</string>
+    <string name="ManageProfile">Manage Profile</string>
+    <string name="GiveFeedBack">GiveFeedBack</string>
+    <string name="CancelBooking">CancelBooking</string>
+    <string name="MakeBooking">Make Booking</string>
+    <string name="Select_Loction">Select Pickup Point</string>
+    <string name="Destination">Destination</string>
+    <string name="SlectDestination">SelectDestination</string>
+    <string name="Fullname">Username</string>
+    <string name="Mr_bean">Mr Bean</string>
+    <string name="Back">Back</string>
+    <string name="PENDING">PENDING</string>
+    <string name="PROGRESS">PROGRESS</string>
+    <string name="CONFIRM">CONFIRM</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="CHANGEDROPLOCATION">change drop location</string>
+    <string-array name="SelectLocation_names">
+        <item>Block11</item>
+        <item>Block9</item>
+        <item>BlockA</item>
+        <item>Block_Engineering</item>
+        <item>Block_F</item>
+        <item>Block_Marketing</item>
+        <item>Decentrum_Kfc</item>
+        <item>Dc_Residence</item>
+        <item>Unipark_BlockA</item>
+        <item>Unipark_BlockB</item>
+    </string-array>
+    <string-array name="SelectDestination_names">
+        <item>GatA_serdangKTM</item>
+        <item>Sungai_BesiLRT_GateA</item>
+        <item>Sungai_BesiLRT_GateB</item>
+        <item>KajangKTM_GateA</item>
+        <item>Uniten_MainEnterance</item>
+        <item>UPM_Lobby</item>
+        <item>Kajang_StudentBlock</item>
+        <item>Mine_ShoppingMall</item>
+    </string-array>
+
+    <string  name="select_faculty">Select Faculty</string>
+
+
+    <string-array id="fa" name="faculty">
+        <item>Dept. of CSE (CSE)</item>
+        <item>Dept. of EEE (EEE)</item>
+        <item>Dept. of Architecture (ARCH)</item>
+        <item>Dept. of BBA (BBA)</item>
+        <item>Dept. of LAW (LAW)</item>
+        <item>Dept. of English (ENG)</item>
+    </string-array>
+
+
+</resources>
